@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NOCO Upholstery</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="style.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NOCO Upholstery</title>
-</head>
-
-<body>
-  <div class="logo">
-    <img src="images/logo.png" alt="NOCO Upholstery" />
-  </div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li class="gallery">
-      <a href="gallery">Gallery</a>
-      <ul class="gallery-options">
-        <li><a href="auto-marine">Auto/Marine</a></li>
-        <li><a href="commercial-healthcare">Commercial/Healthcare</a></li>
-        <li><a href="furniture">Furniture</a></li>
+  <body>
+    <header>
+      <!-- left side header -->
+      <ul id="nav-left">
+        <li class="gallery">
+          <a href="gallery.html">Gallery</a>
+          <ul class="gallery-options">
+            <li>
+              <a href="auto-marine.html">Auto/Marine</a>
+            </li>
+            <li>
+              <a href="commercial-healthcare.html">Commercial/Healthcare</a>
+            </li>
+            <li>
+              <a href="furniture.html">Furniture</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="updates.html">Updates</a>
+        </li>
       </ul>
-    </li>
-    <li><a href="updates">Updates</a></li>
 
+      <!-- logo -->
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="NOCO Upholstery" />
+      </a>
 
-    <!-- contact, Phone and Email -->
+      <!-- right side header -->
 
-    <div>
-      <div>Get In Touch</div>
+      <a href="">Get In Touch</a>
       <ul id="contactOptions">
-        <li><a href="phone">970-999-9999</a></li>
-        <li><a href="email">email@gmail.com</a></li>
+        <li><a href="">970-999-9999</a></li>
+        <li><a href="">email@gmail.com</a></li>
       </ul>
-    </div>
+    </header>
 
     <script type="module" src="/main.js"></script>
-</body>
-
+  </body>
 </html>
