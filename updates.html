@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tailwind.css" />
     <title>Updates</title>
   </head>
 
   <body>
-    <header>
+    <header class="flex flex-row bg-slate-200">
       <!-- left side header -->
-      <ul id="nav-left">
+      <ul id="nav-left" class="flex flex-row">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
         <li class="gallery">
           <a href="gallery.html">Gallery</a>
           <ul class="gallery-options">
@@ -30,17 +34,24 @@
       </ul>
 
       <!-- logo -->
-      <a class="logo" href="index.html">
-        <img src="images/logo.png" alt="NOCO Upholstery" />
+      <a
+        class="logo absolute left-1/2 transform -translate-x-1/2"
+        href="index.html"
+      >
+        <img
+          src="https://via.placeholder.com/190x53.38"
+          alt="NOCO Upholstery"
+        />
       </a>
 
       <!-- right side header -->
-
-      <a href="">Get In Touch</a>
-      <ul id="contactOptions">
-        <li><a href="">970-999-9999</a></li>
-        <li><a href="">email@gmail.com</a></li>
-      </ul>
+      <div class="ml-auto">
+        <a href="">Get In Touch</a>
+        <ul id="contactOptions">
+          <li><a href="">970-999-9999</a></li>
+          <li><a href="">email@gmail.com</a></li>
+        </ul>
+      </div>
     </header>
 
     <!-- Blog posts -->
