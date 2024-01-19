@@ -4,7 +4,11 @@ export default {
   purge: ["*html"],
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Inconsolata", "monospace", "Open Sans", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
