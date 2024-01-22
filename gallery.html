@@ -4,46 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="tailwind.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Open+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
       rel="stylesheet"
     />
     <title>Gallery</title>
   </head>
 
   <body>
-    <header class="flex flex-row bg-slate-200 text-base sticky top-0">
+    <header class="flex flex-row bg-greyscale1 sticky top-0 h-53 text-base">
       <!-- left side header -->
-      <ul id="nav-left" class="flex flex-row mt-6">
+      <ul id="nav-left" class="flex flex-row mt-4">
         <li class="mx-24">
-          <a href="index.html">HOME</a>
+          <a href="index.html" class="hover:underline">HOME</a>
         </li>
         <div class="relative group">
           <a
             href="gallery.html"
             id="dropdownBtn"
-            class="focus:outline-none mr-24"
+            class="focus:outline-none mr-24 hover:underline"
             >GALLERY</a
           >
           <div
             id="dropdown"
-            class="hidden absolute text-black bg-slate-200 p-2"
+            class="hidden absolute text-black bg-slate-200 p-2 bg-greyscale1"
           >
-            <a href="auto-marine.html">Auto/Marine</a>
-            <a href="commercial-healthcare.html">Commercial/Healthcare</a>
-            <a href="furniture.html">Furniture</a>
+            <a href="auto-marine.html" class="hover:underline">Auto/Marine</a>
+            <a href="commercial-healthcare.html" class="hover:underline"
+              >Commercial/Healthcare</a
+            >
+            <a href="furniture.html" class="hover:underline">Furniture</a>
           </div>
         </div>
         <li>
-          <a href="updates.html">UPDATES</a>
+          <a href="updates.html" class="hover:underline">UPDATES</a>
         </li>
       </ul>
 
       <!-- logo -->
       <a
-        class="logo absolute left-1/2 transform -translate-x-1/2 mt-2"
+        class="logo absolute left-1/2 transform -translate-x-1/2"
         href="index.html"
       >
         <img
@@ -53,12 +56,9 @@
       </a>
 
       <!-- right side header -->
-      <div class="ml-auto mr-24">
+      <div class="ml-auto mr-24 mt-4 hover:underline text-base">
         <a href="">Get In Touch</a>
-        <ul id="contactOptions">
-          <li><a href="">970-999-9999</a></li>
-          <li><a href="">email@gmail.com</a></li>
-        </ul>
+        <ul id="contactOptions"></ul>
       </div>
     </header>
 
