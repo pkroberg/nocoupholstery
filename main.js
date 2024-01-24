@@ -21,18 +21,3 @@ document.addEventListener("DOMContentLoaded", function () {
     timeoutId = setTimeout(() => dropdown.classList.add("hidden"), 300);
   });
 });
-
-// Slideshow
-
-document.addEventListener("DOMContentLoaded", function () {
-  var counter = 1;
-  document.getElementById("radio" + counter).checked = true;
-  counter++;
-  setInterval(function () {
-    document.getElementById("radio" + counter).checked = true;
-    counter++;
-    if (counter > 4) {
-      counter = 1;
-    }
-  }, 5000);
-});

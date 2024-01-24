@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="tailwind.css" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -63,47 +68,37 @@
     </header>
 
     <!-- Slider -->
-    <div class="slider">
-      <div class="slides">
-        <input type="radio" name="radio-btn" id="radio1" />
-        <input type="radio" name="radio-btn" id="radio2" />
-        <input type="radio" name="radio-btn" id="radio3" />
-        <input type="radio" name="radio-btn" id="radio4" />
-        <input type="radio" name="radio-btn" id="radio5" />
-        <div class="slide first">
-          <img src="https://via.placeholder.com/1920x1080" alt="" />
+    <div class="split-slideshow">
+      <div class="slideshow">
+        <div class="slider">
+          <div class="item">
+            <img src="pics/8-maybach1.jpg" />
+          </div>
+          <div class="item">
+            <img src="pics/15843648656_73e226010e_o.jpg" />
+          </div>
+          <div class="item">
+            <img src="pics/kam-idris-_HqHX3LBN18-unsplash.jpg" />
+          </div>
+          <div class="item">
+            <img src="pics/restaurant.jpg" />
+          </div>
         </div>
-        <div class="slide">
-          <img src="https://via.placeholder.com/1920x1080" alt="" />
-        </div>
-        <div class="slide">
-          <img src="https://via.placeholder.com/1920x1080" alt="" />
-        </div>
-        <div class="slide">
-          <img src="https://via.placeholder.com/1920x1080" alt="" />
-        </div>
-        <div class="slide">
-          <img src="https://via.placeholder.com/1920x1080" alt="" />
-        </div>
-
-        <!-- Automatic navigation -->
-        <div class="navigation-auto">
-          <div class="auto-btn1"></div>
-          <div class="auto-btn2"></div>
-          <div class="auto-btn3"></div>
-          <div class="auto-btn4"></div>
-        </div>
-
-        <!-- Manual navigation -->
-        <div class="navigation-manual">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
-          <label for="radio4" class="manual-btn"></label>
-        </div>
+      </div>
+      <div class="slideshow-text">
+        <div class="item">Auto</div>
+        <div class="item">Marine</div>
+        <div class="item">Furniture</div>
+        <div class="item">Commercial</div>
       </div>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="slider.js"></script>
     <script type="module" src="main.js"></script>
   </body>
 </html>
