@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Blair"; /* Choose a name for your font */
+  src: url("./fonts/Blair\ ITC\ Std\ Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -5,7 +12,7 @@ body {
 body,
 html {
   height: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Blair", sans-serif;
   margin-left: 0;
 }
 
@@ -43,10 +50,10 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  object-fit: cover;
 }
 .slideshow .slick-dots {
   position: absolute;
-  z-index: 100;
   width: 40px;
   height: 125px;
   bottom: auto;
@@ -99,7 +106,6 @@ html {
 
 .slideshow.slideshow-right {
   left: 0;
-  z-index: 1;
   width: 50vw;
   pointer-events: none;
 }
@@ -155,4 +161,18 @@ button {
   width: 100vw;
   height: 700px;
   overflow: hidden;
+}
+
+/* Styling for z-index */
+.common-ancestor {
+  position: relative;
+  z-index: 1;
+}
+
+.common-ancestor .header {
+  z-index: 2;
+}
+
+.common-ancestor .split-slideshow {
+  z-index: 1;
 }
