@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -14,20 +14,19 @@
   </head>
 
   <body>
+    <!-- Common Ancestor for z-axis -->
     <div class="common-ancestor">
+      <!-- Header -->
       <header
-        class="header flex flex-row bg-greyscale1 sticky top-0 h-53 text-xs"
+        class="header bg-greyscale1 sticky h-53 top-0 text-xs flex flex-row justify-between"
       >
         <!-- left side header -->
-        <ul id="nav-left" class="flex flex-row mt-5">
-          <li class="mx-24">
+        <ul id="nav-left" class="flex mt-[20px] ml-5">
+          <li class="">
             <a href="index.html" class="hover:underline">HOME</a>
           </li>
           <div class="relative group">
-            <a
-              href="gallery.html"
-              id="dropdownBtn"
-              class="focus:outline-none mr-24 hover:underline"
+            <a href="gallery.html" id="dropdownBtn" class="hover:underline mx-5"
               >GALLERY</a
             >
             <div
@@ -58,7 +57,7 @@
         </a>
 
         <!-- right side header -->
-        <div class="ml-auto mr-24 hover:underline mt-5">
+        <div class="hover:underline mt-[20px] mr-5">
           <a href="">Get In Touch</a>
           <ul id="contactOptions"></ul>
         </div>
