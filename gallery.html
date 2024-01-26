@@ -1,36 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="tailwind.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
       rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
     <title>Gallery</title>
   </head>
 
-  <body>
-    <header class="flex flex-row bg-greyscale1 sticky top-0 h-53 text-base">
+  <body class="bg-black text-white">
+    <header
+      class="header bg-black sticky lg:h-53 top-0 lg:px-32 text-xs flex flex-row justify-between"
+    >
       <!-- left side header -->
-      <ul id="nav-left" class="flex flex-row mt-4">
-        <li class="mx-24">
+      <ul id="nav-left" class="hidden lg:flex mt-[20px]">
+        <li class="">
           <a href="index.html" class="hover:underline">HOME</a>
         </li>
         <div class="relative group">
-          <a
-            href="gallery.html"
-            id="dropdownBtn"
-            class="focus:outline-none mr-24 hover:underline"
+          <a href="gallery.html" id="dropdownBtn" class="hover:underline mx-10"
             >GALLERY</a
           >
           <div
             id="dropdown"
-            class="hidden absolute text-black bg-slate-200 p-2 bg-greyscale1"
+            class="hidden absolute text-black p-2 bg-greyscale1"
           >
             <a href="auto-marine.html" class="hover:underline">Auto/Marine</a>
             <a href="commercial-healthcare.html" class="hover:underline"
@@ -56,9 +54,59 @@
       </a>
 
       <!-- right side header -->
-      <div class="ml-auto mr-24 mt-4 hover:underline text-base">
-        <a href="">Get In Touch</a>
+      <div class="hover:underline mt-[20px] hidden lg:flex">
+        <a href="" class="">GET IN TOUCH</a>
         <ul id="contactOptions"></ul>
+      </div>
+
+      <!-- Hamburger Menu -->
+      <div class="lg:hidden h-53">
+        <button
+          id="nav-toggle"
+          class="flex items-center px-3 border h-53 text-white border-white hover:text-white hover:border-white"
+        >
+          <svg
+            class="fill-current h-6 w-6"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="w-full flex-grow hidden pt-14 lg:pt-0" id="nav-content">
+        <ul class="list-reset lg:flex justify-end flex-1 items-center">
+          <li class="mr-3">
+            <a
+              class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+              href="index.html"
+              >HOME</a
+            >
+          </li>
+          <li class="mr-3">
+            <a
+              class="inline-block py-2 px-4 text-white no-underline"
+              href="gallery.html"
+              >GALLERY</a
+            >
+          </li>
+          <li class="mr-3">
+            <a
+              class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+              href="updates.html"
+              >UPDATES</a
+            >
+          </li>
+          <li class="mr-3">
+            <a
+              class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+              href="#"
+              >GET IN TOUCH</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
 

@@ -21,3 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
     timeoutId = setTimeout(() => dropdown.classList.add("hidden"), 300);
   });
 });
+
+// Toggle mobile menu
+document.getElementById("nav-toggle").onclick = function () {
+  document.getElementById("nav-content").classList.toggle("hidden");
+};

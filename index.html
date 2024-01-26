@@ -13,25 +13,28 @@
     <title>NOCO Upholstery</title>
   </head>
 
-  <body>
+  <body class="bg-black text-white">
     <!-- Common Ancestor for z-axis -->
     <div class="common-ancestor">
       <!-- Header -->
       <header
-        class="header bg-greyscale1 sticky h-53 top-0 text-xs flex flex-row justify-between"
+        class="header bg-black sticky lg:h-53 top-0 lg:px-32 text-xs flex flex-row justify-between"
       >
         <!-- left side header -->
-        <ul id="nav-left" class="flex mt-[20px] ml-5">
+        <ul id="nav-left" class="hidden lg:flex mt-[20px]">
           <li class="">
             <a href="index.html" class="hover:underline">HOME</a>
           </li>
           <div class="relative group">
-            <a href="gallery.html" id="dropdownBtn" class="hover:underline mx-5"
+            <a
+              href="gallery.html"
+              id="dropdownBtn"
+              class="hover:underline mx-10"
               >GALLERY</a
             >
             <div
               id="dropdown"
-              class="hidden absolute text-black bg-slate-200 p-2 bg-greyscale1"
+              class="hidden absolute text-black p-2 bg-greyscale1"
             >
               <a href="auto-marine.html" class="hover:underline">Auto/Marine</a>
               <a href="commercial-healthcare.html" class="hover:underline"
@@ -57,9 +60,59 @@
         </a>
 
         <!-- right side header -->
-        <div class="hover:underline mt-[20px] mr-5">
-          <a href="">Get In Touch</a>
+        <div class="hover:underline mt-[20px] hidden lg:flex">
+          <a href="" class="">GET IN TOUCH</a>
           <ul id="contactOptions"></ul>
+        </div>
+
+        <!-- Hamburger Menu -->
+        <div class="lg:hidden h-53">
+          <button
+            id="nav-toggle"
+            class="flex items-center px-3 border h-53 text-white border-white hover:text-white hover:border-white"
+          >
+            <svg
+              class="fill-current h-6 w-6"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="w-full flex-grow hidden pt-14 lg:pt-0" id="nav-content">
+          <ul class="list-reset lg:flex justify-end flex-1 items-center">
+            <li class="mr-3">
+              <a
+                class="inline-block py-2 px-4 text-white no-underline"
+                href="index.html"
+                >HOME</a
+              >
+            </li>
+            <li class="mr-3">
+              <a
+                class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                href="gallery.html"
+                >GALLERY</a
+              >
+            </li>
+            <li class="mr-3">
+              <a
+                class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                href="updates.html"
+                >UPDATES</a
+              >
+            </li>
+            <li class="mr-3">
+              <a
+                class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                href="#"
+                >GET IN TOUCH</a
+              >
+            </li>
+          </ul>
         </div>
       </header>
 
@@ -89,6 +142,42 @@
         </div>
       </div>
     </div>
+
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
+      laudantium odit itaque harum laborum quos nisi est facilis, esse soluta
+      iure accusantium magni quam asperiores placeat possimus amet inventore
+      quo? Doloribus repellat minima molestias iure quaerat amet voluptates
+      magni praesentium beatae quae et id qui porro recusandae impedit iusto
+      quibusdam, cupiditate repellendus commodi explicabo? Placeat iste impedit
+      tempore nam illum. Ut fugiat obcaecati, dolorem a modi quaerat sit eius,
+      perspiciatis minima eligendi voluptates ad nam. Aspernatur voluptates
+      porro fugiat eos id inventore, totam veniam, expedita consectetur rerum
+      nobis, reiciendis vitae. Nam sunt fuga sed quos nulla! Aut fugiat tenetur
+      omnis assumenda quos molestias molestiae incidunt quam veritatis autem
+      praesentium est dolorum aspernatur, ad ullam ratione excepturi quo libero,
+      quod veniam! Rerum necessitatibus, earum pariatur officiis nostrum commodi
+      recusandae ipsum mollitia voluptatem vel labore dolorum ratione ipsa.
+      Fugit asperiores blanditiis tempore tempora, aliquam sequi tenetur, culpa
+      earum esse, consequuntur voluptates autem! Possimus beatae deserunt
+      consequatur nobis magni nisi. Qui vel velit distinctio quas, ab delectus
+      ullam necessitatibus dolor consequuntur dicta, exercitationem sapiente et
+      eos eligendi sed ex aperiam voluptates beatae minus? Obcaecati dicta
+      similique iure eveniet nobis laudantium aliquid sint quaerat optio vero
+      impedit blanditiis architecto aperiam laboriosam, incidunt nihil
+      praesentium quos, vel in animi possimus consequuntur culpa. Consectetur,
+      quae culpa! Natus, tempore consequuntur, laudantium cum, asperiores
+      accusantium reprehenderit hic debitis quidem pariatur minima iusto
+      incidunt eos. Sit repudiandae similique, illum eos voluptas natus ullam
+      placeat sequi voluptatibus nemo, nobis quod! Accusamus nisi natus sapiente
+      aspernatur temporibus maxime enim assumenda, quo quibusdam ipsum eum.
+      Dolorem voluptatem adipisci eligendi hic obcaecati eos accusantium? Iste
+      sunt aliquam obcaecati, totam voluptatibus magni nemo facere? Consequatur
+      iusto fugit debitis rerum sunt quaerat suscipit quis ea nulla. Suscipit,
+      eveniet sapiente voluptas reprehenderit ratione asperiores ipsa culpa
+      molestias modi fuga beatae consequuntur, doloremque, maiores hic? Quidem,
+      minus?
+    </p>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script

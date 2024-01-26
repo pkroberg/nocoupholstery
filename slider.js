@@ -72,4 +72,4 @@ $(".slideshow-text").slick({
 
 setInterval(function () {
   $(".slideshow-left").slick("slickNext");
-}, 5000);
+}, 6500);
