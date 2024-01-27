@@ -20,7 +20,6 @@ $slider.addClass("slideshow-left");
 $(".slideshow-left")
   .slick({
     vertical: true,
-    verticalSwiping: true,
     arrows: false,
     infinite: true,
     dots: true,
