@@ -18,7 +18,7 @@
     <div class="common-ancestor">
       <!-- Header -->
       <header
-        class="header bg-black sticky lg:h-53 top-0 lg:px-32 text-xs flex flex-row justify-end"
+        class="header bg-black sticky lg:h-53 top-0 lg:px-32 text-xs flex flex-row lg:justify-between justify-end"
       >
         <!-- left side header -->
         <ul id="nav-left" class="hidden lg:flex mt-[20px]">
@@ -69,7 +69,7 @@
         <div class="lg:hidden h-53">
           <button
             id="nav-toggle"
-            class="flex items-center px-3 border h-53 text-white border-white hover:text-white hover:border-white"
+            class="absolute right-0 top-0 flex items-center px-3 border h-53 text-white border-white hover:text-white hover:border-white"
           >
             <svg
               class="fill-current h-6 w-6"
@@ -83,22 +83,22 @@
         </div>
 
         <div class="w-full flex-grow hidden pt-16 lg:pt-0" id="nav-content">
-          <ul class="list-reset lg:flex justify-end flex-1 items-center">
+          <ul class="list-reset lg:flex justify-end flex-1 mb-5">
             <li class="mr-3">
               <a
-                class="py-2 px-4 text-white no-underline flex justify-end"
+                class="pb-2 pt-5 px-4 mb-2 text-white no-underline flex justify-end"
                 href="index.html"
                 >HOME</a
               >
             </li>
-            <li class="mr-3 flex justify-end">
+            <li class="mr-3 mb-2 flex justify-end">
               <a
                 class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
                 href="gallery.html"
                 >GALLERY</a
               >
             </li>
-            <li class="mr-3 flex justify-end">
+            <li class="mr-3 mb-2 flex justify-end">
               <a
                 class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
                 href="updates.html"
