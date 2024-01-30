@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="tailwind.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css">
     <link
       rel="stylesheet"
       type="text/css"
@@ -23,19 +24,19 @@
         <!-- left side header -->
         <ul id="nav-left" class="hidden lg:flex mt-[20px]">
           <li class="">
-            <a href="index.html" class="hover:underline">HOME</a>
+            <a href="index.html" class="link">HOME</a>
           </li>
           
           <div class="relative group">
             <a
               href="gallery.html"
               id="dropdownBtn"
-              class="hover:underline mx-10"
+              class="link mx-10"
               >GALLERY</a
             >
             <div
               id="dropdown"
-              class="hidden absolute text-white p-2 bg-black"
+              class="hidden absolute text-white mt-1.5 p-2 bg-black"
             >
               <a href="auto-marine.html" class="hover:underline flex mt-2">Auto/Marine</a>
               <a href="commercial-healthcare.html" class="hover:underline flex my-3"
@@ -45,7 +46,7 @@
             </div>
           </div>
           <li>
-            <a href="updates.html" class="hover:underline">UPDATES</a>
+            <a href="updates.html" class="link">UPDATES</a>
           </li>
         </ul>
 
@@ -61,8 +62,8 @@
         </a>
 
         <!-- right side header -->
-        <div class="hover:underline mt-[20px] hidden lg:flex">
-          <a href="" class="">GET IN TOUCH</a>
+        <div class="hover:underline mt-1.5 hidden lg:flex">
+          <a href="/"><button class="bn632-hover bn21 py-3 px-10">CONTACT</button></a>
           <ul id="contactOptions"></ul>
         </div>
 
@@ -110,7 +111,7 @@
               <a
                 class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
                 href="#"
-                >GET IN TOUCH</a
+                >CONTACT</a
               >
             </li>
           </ul>
@@ -135,7 +136,7 @@
             </div>
           </div>
         </div>
-        <div class="slideshow-text">
+        <div class="slideshow-text hidden">
           <div class="item">Auto</div>
           <div class="item">Marine</div>
           <div class="item">Furniture</div>
