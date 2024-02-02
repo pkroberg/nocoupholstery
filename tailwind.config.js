@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   mode: "jit",
-  purge: ["./dist/*html"],
+  purge: ["./src/*html"],
   content: [],
   theme: {
     extend: {
@@ -17,7 +17,8 @@ export default {
         greyscale9: "#212529",
       },
       fontFamily: {
-        sans: ["Inconsolata", "monospace", "Open Sans", "sans-serif"],
+        Blair: ["Blair", "serif"],
+        Orbitron: ["Orbitron", "sans-serif"],
       },
     },
     height: {
