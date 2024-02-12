@@ -64,8 +64,8 @@ html {
   height: 125px;
   bottom: auto;
   /* HEIGHT OF SLICK DOTS */
-  top: 355px;
-  right: 0;
+  top: 23.8rem;
+  right: 3rem;
   transform: translateY(-50%);
   left: auto;
   color: #fff;
@@ -165,7 +165,8 @@ button {
 .split-slideshow {
   position: relative;
   width: 100vw;
-  height: 700px;
+  /* SLIDESHOW HEIGHT */
+  height: 725px;
   overflow: hidden;
 }
 
@@ -182,5 +183,3 @@ button {
 .common-ancestor .split-slideshow {
   z-index: 1;
 }
-
-/* Hamburger menu */

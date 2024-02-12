@@ -144,7 +144,9 @@
       <!-- Bio and Company Description -->
       <div class="pb-10">
         <div class="w-full xl:hidden flex justify-center p-10">
-          <div class="grid grid-cols-2 w-96">
+          <div
+            class="grid grid-cols-2 w-96 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]"
+          >
             <img src="https://via.placeholder.com/200" alt="Image 1" />
             <img src="https://via.placeholder.com/200" alt="Image 2" />
             <img src="https://via.placeholder.com/200" alt="Image 3" />
@@ -154,7 +156,9 @@
         <div
           class="flex flex-auto items-center gap-10 xl:px-64 2xl:px-96 xl:py-10"
         >
-          <div class="w-full hidden xl:flex justify-center">
+          <div
+            class="w-auto hidden xl:flex justify-center shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]"
+          >
             <div class="grid grid-cols-2 w-96">
               <img src="https://via.placeholder.com/200" alt="Image 1" />
               <img src="https://via.placeholder.com/200" alt="Image 2" />
@@ -203,33 +207,39 @@
     </div>
 
     <!-- Footer -->
-    <footer>
+    <footer class="mt-5 mx-40 pt-5 pb-10 px-20 border-t-2 border-black">
       <div
-        class="footer-container flex items-center justify-between text-xs bg-white sticky lg:h-53 top-0 lg:px-32 flex-row lg:justify-between"
+        class="footer-container flex justify-between text-xs sticky lg:h-53 top-0 lg:px-32 flex-row lg:justify-between"
       >
         <div class="contact-info">
-          <p>Phone: (970) 219-0571</p>
-          <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+          <p class="p-1">Phone: (970) 219-0571</p>
+          <p class="p-1">
+            Email: <a href="mailto:info@example.com">info@example.com</a>
+          </p>
         </div>
 
-        <div class="navigation-links">
+        <div>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="updates.html">Updates</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="/">Testimonials</a></li>
+            <li class="p-1"><a href="index.html">Home</a></li>
+            <li class="p-1"><a href="gallery.html">Gallery</a></li>
+            <li class="p-1"><a href="updates.html">Updates</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li class="p-1"><a href="contact.html">Contact Us</a></li>
+            <li class="p-1"><a href="/">Testimonials</a></li>
           </ul>
         </div>
 
-        <div class="quick-links">
-          <a href="/faq">FAQ</a>
-          <a href="contact.html">Request a free quote</a>
-          <a href="/#hours-of-operation-section">Hours of Operation</a>
+        <div class="quick-links flex flex-col">
+          <a href="/faq" class="p-1">FAQ</a>
+          <a href="contact.html" class="p-1">Request a free quote</a>
           <a
             href="https://g.page/r/CY174FU9hK2kEB0/review"
             target="_blank"
             rel="noopener noreferrer"
+            class="p-1"
             >Leave a Google Review</a
           >
         </div>
