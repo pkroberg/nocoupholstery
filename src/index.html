@@ -16,7 +16,7 @@
 
   <body class="bg-white text-black">
     <!-- Common Ancestor for z-axis -->
-    <div class="common-ancestor sticky">
+    <div class="common-ancestor">
       <!-- Header -->
       <header
         class="header bg-white sticky lg:h-53 top-0 xl:px-32 px-5 text-xs flex flex-row lg:justify-between justify-end"
@@ -169,7 +169,7 @@
     </div>
 
     <!-- Bio and Company Description -->
-    <div class="pb-10 font-sans">
+    <div class="pb-5 font-sans text-lg">
       <div class="w-full xl:hidden flex justify-center p-10">
         <div
           class="grid grid-cols-2 w-96 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]"
@@ -181,7 +181,7 @@
         </div>
       </div>
       <div
-        class="flex flex-auto items-center gap-10 xl:px-64 2xl:px-96 xl:py-10"
+        class="flex flex-auto items-center gap-24 xl:px-60 2xl:px-[350px] xl:py-10"
       >
         <div
           class="w-auto hidden xl:flex justify-center shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]"
@@ -193,7 +193,7 @@
             <img src="https://via.placeholder.com/200" alt="Image 4" />
           </div>
         </div>
-        <p class="text-justify xl:px-0 px-20">
+        <p class="text-justify xl:px-0 sm:px-20 px-10">
           At FOCO Upholstery, we specialize in transforming the ordinary into
           the extraordinary, enhancing the aesthetics and comfort of cars,
           furniture, aircraft, boats, fitness equipment, and more. Our
@@ -215,10 +215,14 @@
       >
         <div class="contact-info">
           <p class="p-1 underline text-base">Contact Info</p>
-          <p class="p-1">Phone: (970) 219-0571</p>
-          <p class="p-1">
-            Email: <a href="mailto:info@example.com">info@example.com</a>
-          </p>
+          <div class="sm:flex">
+            <p class="p-1">Phone:</p>
+            <p class="p-1">(970) 219-0571</p>
+          </div>
+          <div class="sm:flex">
+            <p class="p-1">Email:</p>
+            <p class="p-1">info@example.com</p>
+          </div>
         </div>
 
         <div

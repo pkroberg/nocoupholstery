@@ -64,13 +64,30 @@ html {
   height: 125px;
   bottom: auto;
   /* HEIGHT OF SLICK DOTS */
-  top: 23.8rem;
+  top: 37.5rem;
   right: 3rem;
   transform: translateY(-50%);
   left: auto;
   color: #fff;
   display: block;
 }
+
+@media (max-width: 767px) {
+  .slideshow .slick-dots {
+    position: absolute;
+    width: 40px;
+    height: 125px;
+    bottom: auto;
+    /* HEIGHT OF SLICK DOTS */
+    top: 23.8rem;
+    right: 0rem;
+    transform: translateY(-50%);
+    left: auto;
+    color: #fff;
+    display: block;
+  }
+}
+
 .slideshow .slick-dots li {
   display: block;
   width: 100%;
@@ -166,8 +183,18 @@ button {
   position: relative;
   width: 100vw;
   /* SLIDESHOW HEIGHT */
-  height: 725px;
+  height: 73rem;
   overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .split-slideshow {
+    position: relative;
+    width: 100vw;
+    /* SLIDESHOW HEIGHT */
+    height: 725px;
+    overflow: hidden;
+  }
 }
 
 /* Styling for z-index */
