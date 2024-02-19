@@ -23,6 +23,7 @@ export default {
     },
     height: {
       53: "53px",
+      106: "106px",
     },
   },
   plugins: [],
