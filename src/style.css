@@ -64,7 +64,7 @@ html {
   height: 125px;
   bottom: auto;
   /* HEIGHT OF SLICK DOTS */
-  top: 37.5rem;
+  top: 46.5vh;
   right: 3rem;
   transform: translateY(-50%);
   left: auto;
@@ -183,7 +183,7 @@ button {
   position: relative;
   width: 100vw;
   /* SLIDESHOW HEIGHT */
-  height: 73rem;
+  height: 90vh;
   overflow: hidden;
 }
 

@@ -638,12 +638,12 @@ video {
   display: none;
 }
 
-.h-53 {
-  height: 53px;
-}
-
 .h-106 {
   height: 106px;
+}
+
+.h-53 {
+  height: 53px;
 }
 
 .w-6 {
@@ -846,6 +846,10 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
 .pt-16 {
   padding-top: 4rem;
 }
@@ -862,12 +866,8 @@ video {
   padding-top: 1.25rem;
 }
 
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
-.pt-14 {
-  padding-top: 3.5rem;
+.pt-24 {
+  padding-top: 6rem;
 }
 
 .text-justify {
