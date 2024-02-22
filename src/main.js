@@ -26,3 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
 document.getElementById("nav-toggle").onclick = function () {
   document.getElementById("nav-content").classList.toggle("hidden");
 };
+
+// Reset Input Fields on Form Submit
+window.onload = function () {
+  document.getElementById("contact-form").reset();
+};

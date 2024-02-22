@@ -139,9 +139,18 @@
         Contact us for a free quote
       </h2>
       <div class="bg-white p-8 rounded shadow-[0_3px_10px_rgb(0,0,0,0.2)] w-96">
-        <form id="contact-form" action="#" method="post">
+        <form
+          id="contact-form"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
           <!-- Name Field -->
           <div class="mb-4">
+            <input
+              type="hidden"
+              name="access_key"
+              value="acbc37ba-0f6d-436d-ba28-07319fc6b586"
+            />
             <label for="name" class="block text-gray-700 text-sm font-bold mb-2"
               >Name</label
             >
@@ -199,5 +208,7 @@
       </div>
     </div>
     <!-- Contact Form End -->
+
+    <script src="main.js"></script>
   </body>
 </html>
