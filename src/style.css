@@ -49,6 +49,8 @@ html {
 .slideshow .slider .item .text {
   display: none;
 }
+
+/* IMAGE POSITIONING */
 .slideshow .slider .item img {
   min-width: 101%;
   min-height: 101%;
@@ -129,7 +131,7 @@ html {
 
 .slideshow.slideshow-right {
   left: 0;
-  width: 50vw;
+  width: 49.71vw;
   pointer-events: none;
 }
 .slideshow.slideshow-right .slider {
