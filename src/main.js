@@ -31,3 +31,22 @@ document.getElementById("nav-toggle").onclick = function () {
 window.onload = function () {
   document.getElementById("contact-form").reset();
 };
+
+// Gallery Full Page View
+function getPics() {}
+const imgs = document.querySelectorAll(".gallery img");
+const fullPage = document.querySelector("#fullpage");
+
+imgs.forEach((img) => {
+  img.addEventListener("click", function () {
+    fullPage.style.backgroundImage = "url(" + img.src + ")";
+    fullPage.style.backgroundColor = "white";
+    fullPage.style.display = "block";
+    document.body.style.overflow = "hidden";
+    window.scrollTo(0, 0);
+  });
+});
+fullPage.addEventListener("click", function () {
+  fullPage.style.display = "none";
+  document.body.style.overflow = "auto"; // Re-enable scrolling
+});

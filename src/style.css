@@ -212,3 +212,18 @@ button {
 .common-ancestor .split-slideshow {
   z-index: 1;
 }
+
+/* Gallery Full Page View */
+#fullpage {
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-color: black;
+}
