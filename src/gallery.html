@@ -11,7 +11,7 @@
 
   <body class="bg-white text-black" onload="getPics()">
     <header
-      class="header bg-white sticky lg:h-53 top-0 xl:px-32 px-5 text-xs flex flex-row lg:justify-between justify-end"
+      class="header bg-white sticky lg:h-53 top-0 xl:px-32 px-5 text-xs flex flex-row lg:justify-between justify-end z-10"
     >
       <!-- left side header -->
       <ul id="nav-left" class="hidden lg:flex mt-[20px]">
@@ -133,41 +133,74 @@
         </ul>
       </div>
     </header>
+
+    <!-- Gallery Choices (lg) -->
     <div
-      class="gallery sm:my-32 my-0 sm:mx-24 mx-4 grid grid-cols-2 gap-x-4 sm:gap-y-24 gap-y-4 justify-items-center"
+      class="hidden my-0 sm:mx-24 sm:mt-16 sm:mb-8 mx-4 lg:grid grid-cols-3 gap-x-4 sm:gap-y-24 gap-y-4 justify-items-center text-xl"
     >
-      <img
-        class="shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:scale-105 hover:cursor-pointer transition duration-300 ease-in-out"
-        src="https://via.placeholder.com/500x500"
-      />
-      <img
-        class="shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:scale-105 hover:cursor-pointer transition duration-300 ease-in-out"
-        src="https://via.placeholder.com/500x500"
-      />
-      <img
-        class="shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:scale-105 hover:cursor-pointer transition duration-300 ease-in-out"
-        src="https://via.placeholder.com/500x500"
-      />
-      <img
-        class="shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:scale-105 hover:cursor-pointer transition duration-300 ease-in-out"
-        src="https://via.placeholder.com/500x500"
-      />
-      <img
-        class="shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:scale-105 hover:cursor-pointer transition duration-300 ease-in-out"
-        src="https://via.placeholder.com/500x500"
-      />
-      <img
-        class="shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:scale-105 hover:cursor-pointer transition duration-300 ease-in-out"
-        src="https://via.placeholder.com/500x500"
-      />
-      <img
-        class="shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:scale-105 hover:cursor-pointer transition duration-300 ease-in-out"
-        src="https://via.placeholder.com/500x500"
-      />
-      <img
-        class="shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:scale-105 hover:cursor-pointer transition duration-300 ease-in-out"
-        src="https://via.placeholder.com/500x500"
-      />
+      <a href="auto-marine.html">
+        <div class="link">Auto/Marine</div>
+      </a>
+      <a href="commercial-healthcare.html">
+        <div class="link">Commercial/Healthcare</div>
+      </a>
+      <a href="furniture.html">
+        <div class="link">Furniture</div>
+      </a>
+    </div>
+    <div
+      class="gallery hidden sm:mb-32 my-0 sm:mx-24 mx-4 lg:grid grid-cols-3 gap-x-4 sm:gap-y-24 gap-y-4 justify-items-center"
+    >
+      <a href="auto-marine.html">
+        <img
+          class="shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:scale-105 hover:cursor-pointer transition duration-300 ease-in-out"
+          src="https://via.placeholder.com/500x500"
+        />
+      </a>
+      <a href="commercial-healthcare.html">
+        <img
+          class="shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:scale-105 hover:cursor-pointer transition duration-300 ease-in-out"
+          src="https://via.placeholder.com/500x500"
+        />
+      </a>
+      <a href="furniture.html">
+        <img
+          class="shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:scale-105 hover:cursor-pointer transition duration-300 ease-in-out"
+          src="https://via.placeholder.com/500x500"
+        />
+      </a>
+    </div>
+    <!-- Gallery Choices (mobile) -->
+    <div
+      class="gallery lg:hidden sm:mx-24 mx-4 grid grid-cols-1 gap-x-4 gap-y-4 justify-items-center text-lg"
+    >
+      <a href="auto-marine.html">
+        <div class="link mt-5 -mb-2.5">Auto/Marine</div>
+      </a>
+      <a href="auto-marine.html">
+        <img
+          class="shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:scale-105 hover:cursor-pointer transition duration-300 ease-in-out"
+          src="https://via.placeholder.com/500x500"
+        />
+      </a>
+      <a href="commercial-healthcare.html">
+        <div class="link mt-5 -mb-2.5">Commercial/Healthcare</div>
+      </a>
+      <a href="commercial-healthcare.html">
+        <img
+          class="shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:scale-105 hover:cursor-pointer transition duration-300 ease-in-out"
+          src="https://via.placeholder.com/500x500"
+        />
+      </a>
+      <a href="furniture.html">
+        <div class="link mt-5 -mb-2.5">Furniture</div>
+      </a>
+      <a href="furniture.html">
+        <img
+          class="shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:scale-105 hover:cursor-pointer transition duration-300 ease-in-out"
+          src="https://via.placeholder.com/500x500"
+        />
+      </a>
     </div>
     <!-- Full Page Img -->
     <div id="fullpage" onclick="this.style.display='none';"></div>

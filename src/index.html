@@ -19,7 +19,7 @@
     <div class="common-ancestor">
       <!-- Header -->
       <header
-        class="header bg-white sticky lg:h-53 top-0 xl:px-32 px-5 text-xs flex flex-row lg:justify-between justify-end"
+        class="header bg-white sticky lg:h-53 top-0 xl:px-32 px-5 text-xs flex flex-row lg:justify-between justify-end z-20"
       >
         <!-- left side header -->
         <ul id="nav-left" class="hidden lg:flex mt-[20px]">
@@ -113,7 +113,7 @@
         </div>
 
         <div
-          class="w-full flex-grow hidden pt-24 sm:pt-12 lg:pt-0"
+          class="lg:hidden w-full flex-grow hidden pt-24 sm:pt-12 lg:pt-0"
           id="nav-content"
         >
           <ul class="list-reset lg:flex justify-end flex-1 mb-5">
@@ -174,73 +174,51 @@
           <div class="item">Commercial</div>
         </div>
       </div>
-      <!-- Scroll Icon -->
-      <dotlottie-player
-        class="absolute hidden md:block bottom-[0rem] left-1/2 transform -translate-x-1/2 z-10"
-        src="https://lottie.host/47743d0c-21b1-415a-b948-d0bd030a5936/9Xwn9Ny166.json"
-        background="transparent"
-        direction="1"
-        speed="1"
-        style="width: 75px; height: 75px"
-        loop
-        autoplay
-      ></dotlottie-player>
-      <!-- Scroll Icon for mobile -->
-      <dotlottie-player
-        class="absolute md:hidden bottom-[0rem] left-1/2 transform -translate-x-1/2 z-10"
-        src="https://lottie.host/47743d0c-21b1-415a-b948-d0bd030a5936/9Xwn9Ny166.json"
-        background="transparent"
-        direction="-1"
-        speed="1"
-        style="width: 75px; height: 75px"
-        loop
-        autoplay
-      ></dotlottie-player>
-    </div>
 
-    <!-- Bio and Company Description -->
-    <div class="pb-5 font-sans text-lg">
-      <div class="w-full xl:hidden flex justify-center p-10">
-        <div
-          class="grid grid-cols-2 w-96 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]"
-        >
-          <img src="https://via.placeholder.com/200" alt="Image 1" />
-          <img src="https://via.placeholder.com/200" alt="Image 2" />
-          <img src="https://via.placeholder.com/200" alt="Image 3" />
-          <img src="https://via.placeholder.com/200" alt="Image 4" />
-        </div>
-      </div>
-      <div
-        class="flex flex-auto items-center gap-24 xl:px-60 2xl:px-[350px] xl:py-10"
-      >
-        <div
-          class="w-auto hidden xl:flex justify-center shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]"
-        >
-          <div class="grid grid-cols-2 w-96">
+      <!-- Bio and Company Description -->
+      <div class="pb-5 font-sans text-lg">
+        <div class="w-full xl:hidden flex justify-center p-10">
+          <div
+            class="grid grid-cols-2 w-96 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]"
+          >
             <img src="https://via.placeholder.com/200" alt="Image 1" />
             <img src="https://via.placeholder.com/200" alt="Image 2" />
             <img src="https://via.placeholder.com/200" alt="Image 3" />
             <img src="https://via.placeholder.com/200" alt="Image 4" />
           </div>
         </div>
-        <div class="xl:px-0 sm:px-20 px-10">
-          <p class="text-justify">
-            At FOCO Upholstery, we specialize in transforming the ordinary into
-            the extraordinary. Whether it's the sleek interiors of automobiles,
-            the timeless elegance of furniture, or the precision required for
-            aircraft and boats, we bring your ideas to life with unparalleled
-            skill and dedication. Allow us to be the artisans behind your
-            vision.
-          </p>
+        <div
+          class="flex flex-auto items-center gap-24 xl:px-60 2xl:px-[350px] xl:py-10"
+        >
+          <div
+            class="w-auto hidden xl:flex justify-center shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]"
+          >
+            <div class="grid grid-cols-2 w-96">
+              <img src="https://via.placeholder.com/200" alt="Image 1" />
+              <img src="https://via.placeholder.com/200" alt="Image 2" />
+              <img src="https://via.placeholder.com/200" alt="Image 3" />
+              <img src="https://via.placeholder.com/200" alt="Image 4" />
+            </div>
+          </div>
+          <div class="xl:px-0 sm:px-20 px-10">
+            <p class="text-justify">
+              At FOCO Upholstery, we specialize in transforming the ordinary
+              into the extraordinary. Whether it's the sleek interiors of
+              automobiles, the timeless elegance of furniture, or the precision
+              required for aircraft and boats, we bring your ideas to life with
+              unparalleled skill and dedication. Allow us to be the artisans
+              behind your vision.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="pt-10 text-center">
-        <p class="pb-2.5 font-semibold">
-          We proudly serve the following cities:
-        </p>
-        <p>Fort Collins</p>
-        <p>Loveland</p>
-        <p>Windsor</p>
+        <div class="pt-10 text-center">
+          <p class="pb-2.5 font-semibold">
+            We proudly serve the following cities:
+          </p>
+          <p>Fort Collins</p>
+          <p>Loveland</p>
+          <p>Windsor</p>
+        </div>
       </div>
     </div>
 

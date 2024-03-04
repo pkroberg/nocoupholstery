@@ -2,21 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../tailwind.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="header.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Auto / Marine</title>
   </head>
 
-  <body>
+  <body class="bg-white text-black" onload="getPics()">
     <header
-      class="header bg-black sticky lg:h-53 top-0 lg:px-32 text-xs flex flex-row lg:justify-between justify-end"
+      class="header bg-white sticky lg:h-53 top-0 xl:px-32 px-5 text-xs flex flex-row lg:justify-between justify-end"
     >
       <!-- left side header -->
       <ul id="nav-left" class="hidden lg:flex mt-[20px]">
@@ -29,7 +24,7 @@
           <!-- Dropdown Start -->
           <div
             id="dropdown"
-            class="hidden absolute text-white mt-2 p-2 bg-black"
+            class="hidden absolute text-black mt-2 p-2 bg-white"
           >
             <a href="auto-marine.html" class="hover:underline flex mt-2"
               >Auto/Marine</a
@@ -48,29 +43,25 @@
         </li>
       </ul>
 
-      <!-- logo -->
-      <a
-        class="logo absolute left-1/2 transform -translate-x-1/2"
-        href="index.html"
-      >
-        <img
-          src="https://via.placeholder.com/190x53.38"
-          alt="NOCO Upholstery"
-        />
-      </a>
+      <!-- Logo -->
+      <h1 class="flex lg:pt-0 sm:pt-3 pt-12 lg:items-center whitespace-nowrap">
+        <a
+          class="logo absolute left-1/2 transform -translate-x-1/2 font-Orbitron text-2xl"
+          href="index.html"
+        >
+          FOCO Upholstery
+        </a>
+      </h1>
+      <!-- Logo End -->
 
       <!-- right side header -->
-      <div class="flex space-x-10">
-        <div class="hover:underline mt-1.5 hidden lg:flex">
-          <a href="/"
-            ><button class="bn632-hover bn21 py-3 px-10">CONTACT</button></a
-          >
-          <ul id="contactOptions"></ul>
-        </div>
+      <div class="flex space-x-10 items-center">
+        <a href="contact.html" class="link hidden lg:flex">TESTIMONIALS</a>
+        <a href="contact.html" class="link hidden lg:flex">CONTACT</a>
         <!-- Instagram Link -->
         <ul>
           <li class="item hidden lg:flex">
-            <a href="https://www.instagram.com/focoupholstery/">
+            <a href="https://www.instagram.com/focoupholstery/" target="_blank">
               <i class="fa-brands fa-instagram icon"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -90,10 +81,10 @@
       </div>
 
       <!-- Hamburger Menu -->
-      <div class="lg:hidden h-53">
+      <div class="lg:hidden h-[90px] sm:h-53">
         <button
           id="nav-toggle"
-          class="absolute right-0 top-0 flex items-center px-3 border h-53 text-white border-white hover:text-white hover:border-white"
+          class="absolute right-0 top-0 flex items-center px-3 border h-53 text-black border-white hover:text-black hover:border-white"
         >
           <svg
             class="fill-current h-6 w-6"
@@ -106,54 +97,119 @@
         </button>
       </div>
 
-      <div class="w-full flex-grow hidden pt-16 lg:pt-0" id="nav-content">
+      <div
+        class="w-full flex-grow hidden pt-24 sm:pt-12 lg:pt-0"
+        id="nav-content"
+      >
         <ul class="list-reset lg:flex justify-end flex-1 mb-5">
           <li class="mr-3">
             <a
-              class="pb-2 pt-5 px-4 mb-2 text-white no-underline flex justify-end"
+              class="pb-2 pt-5 px-4 mb-2 text-black no-underline flex justify-end"
               href="index.html"
               >HOME</a
             >
           </li>
           <li class="mr-3 mb-2 flex justify-end">
             <a
-              class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+              class="inline-block text-gray-500 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
               href="gallery.html"
               >GALLERY</a
             >
           </li>
           <li class="mr-3 mb-2 flex justify-end">
             <a
-              class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+              class="inline-block text-gray-500 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
               href="updates.html"
               >UPDATES</a
             >
           </li>
           <li class="mr-3 flex justify-end">
             <a
-              class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-              href="#"
+              class="inline-block text-gray-500 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+              href="contact.html"
               >CONTACT</a
             >
           </li>
         </ul>
       </div>
     </header>
-
-    <img src="https://via.placeholder.com/300x400" />
-    <img src="https://via.placeholder.com/300x400" />
-    <img src="https://via.placeholder.com/300x400" />
-    <img src="https://via.placeholder.com/300x400" />
-
-    <!-- contact, Phone and Email -->
-
-    <div>
-      <div>Get In Touch</div>
-      <ul id="contactOptions">
-        <li><a href="phone">970-999-9999</a></li>
-        <li><a href="email">clay@gmail.com</a></li>
-      </ul>
+    <div
+      class="my-0 sm:mx-24 sm:mt-16 sm:mb-8 mx-4 flex justify-center text-xl"
+    >
+      <div>Auto/Marine</div>
     </div>
+    <div
+      class="gallery sm:mb-32 my-0 sm:mx-24 mx-4 grid grid-cols-3 gap-x-4 sm:gap-y-24 gap-y-4 justify-items-center"
+    >
+      <img
+        class="shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:scale-105 hover:cursor-pointer transition duration-300 ease-in-out"
+        src="https://via.placeholder.com/500x500"
+      />
+
+      <img
+        class="shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:scale-105 hover:cursor-pointer transition duration-300 ease-in-out"
+        src="https://via.placeholder.com/500x500"
+      />
+
+      <img
+        class="shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:scale-105 hover:cursor-pointer transition duration-300 ease-in-out"
+        src="https://via.placeholder.com/500x500"
+      />
+      <img
+        class="shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:scale-105 hover:cursor-pointer transition duration-300 ease-in-out"
+        src="https://via.placeholder.com/500x500"
+      />
+
+      <img
+        class="shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:scale-105 hover:cursor-pointer transition duration-300 ease-in-out"
+        src="https://via.placeholder.com/500x500"
+      />
+
+      <img
+        class="shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:scale-105 hover:cursor-pointer transition duration-300 ease-in-out"
+        src="https://via.placeholder.com/500x500"
+      />
+    </div>
+    <!-- Full Page Img -->
+    <div id="fullpage" onclick="this.style.display='none';"></div>
+
+    <!-- Footer -->
+    <footer
+      class="mt-5 xl:mx-40 mx-10 pt-5 pb-10 xl:px-20 px-1 border-t-2 border-black text-md text-xs"
+    >
+      <div
+        class="footer-container flex items-center justify-between text-xs lg:h-53 top-0 flex-row lg:justify-between"
+      >
+        <div class="contact-info">
+          <p class="p-1 underline text-base">Contact Info</p>
+          <div class="sm:flex">
+            <p class="p-1 font-bold">Phone:</p>
+            <p class="p-1">(970) 219-0571</p>
+          </div>
+          <div class="sm:flex">
+            <p class="p-1 font-bold pt-2.5">Email:</p>
+            <p class="p-1 font-sans text-base">clay@focoupholstery.com</p>
+          </div>
+        </div>
+
+        <div
+          class="quick-links flex flex-col border-l sm:border-none border-black border-0"
+        >
+          <a href="contact.html" class="p-1 hover:underline"
+            >Request a free quote</a
+          >
+          <a
+            href="https://g.page/r/CY174FU9hK2kEB0/review"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="p-1 hover:underline"
+            >Leave a Google Review</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer End -->
 
     <script type="module" src="main.js"></script>
   </body>

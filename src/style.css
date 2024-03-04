@@ -226,4 +226,5 @@ button {
   background-repeat: no-repeat no-repeat;
   background-position: center center;
   background-color: black;
+  cursor: pointer;
 }
