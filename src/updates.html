@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../tailwind.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="header.css" />
@@ -11,178 +10,203 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Updates</title>
   </head>
 
-  <body class="bg-black text-white">
-    <header
-      class="header bg-black sticky lg:h-53 top-0 lg:px-32 text-xs flex flex-row lg:justify-between justify-end"
-    >
-      <!-- left side header -->
-      <ul id="nav-left" class="hidden lg:flex mt-[20px]">
-        <li class="">
-          <a href="index.html" class="link">HOME</a>
-        </li>
-
-        <div class="relative group">
-          <a href="gallery.html" id="dropdownBtn" class="link mx-10">GALLERY</a>
-          <!-- Dropdown Start -->
-          <div
-            id="dropdown"
-            class="hidden absolute text-white mt-2 p-2 bg-black"
-          >
-            <a href="auto-marine.html" class="hover:underline flex mt-2"
-              >Auto/Marine</a
-            >
-            <a
-              href="commercial-healthcare.html"
-              class="hover:underline flex my-3"
-              >Commercial/Healthcare</a
-            >
-            <a href="furniture.html" class="hover:underline">Furniture</a>
-          </div>
-          <!-- Dropdown End -->
-        </div>
-        <li>
-          <a href="updates.html" class="link">UPDATES</a>
-        </li>
-      </ul>
-
-      <!-- logo -->
-      <a
-        class="logo absolute left-1/2 transform -translate-x-1/2"
-        href="index.html"
+  <body class="bg-white text-black">
+    <body class="bg-white text-black">
+      <!-- Header -->
+      <header
+        class="header bg-white sticky lg:h-53 top-0 xl:px-32 px-5 text-xs flex flex-row lg:justify-between justify-end z-20"
       >
-        <img
-          src="https://via.placeholder.com/190x53.38"
-          alt="NOCO Upholstery"
-        />
-      </a>
-
-      <!-- right side header -->
-      <div class="flex space-x-10">
-        <div class="hover:underline mt-1.5 hidden lg:flex">
-          <a href="/"
-            ><button class="bn632-hover bn21 py-3 px-10">CONTACT</button></a
-          >
-          <ul id="contactOptions"></ul>
-        </div>
-        <!-- Instagram Link -->
-        <ul>
-          <li class="item hidden lg:flex">
-            <a href="https://www.instagram.com/focoupholstery/">
-              <i class="fa-brands fa-instagram icon"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  class="bi bi-instagram"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
-                  /></svg
-              ></i>
-            </a>
+        <!-- left side header -->
+        <ul id="nav-left" class="hidden lg:flex mt-[20px]">
+          <li class="">
+            <a href="index.html" class="link">HOME</a>
           </li>
-        </ul>
-      </div>
 
-      <!-- Hamburger Menu -->
-      <div class="lg:hidden h-53">
-        <button
-          id="nav-toggle"
-          class="absolute right-0 top-0 flex items-center px-3 border h-53 text-white border-white hover:text-white hover:border-white"
-        >
-          <svg
-            class="fill-current h-6 w-6"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-        </button>
-      </div>
-
-      <div class="w-full flex-grow hidden pt-16 lg:pt-0" id="nav-content">
-        <ul class="list-reset lg:flex justify-end flex-1 mb-5">
-          <li class="mr-3">
-            <a
-              class="pb-2 pt-5 px-4 mb-2 text-white no-underline flex justify-end"
-              href="index.html"
-              >HOME</a
-            >
-          </li>
-          <li class="mr-3 mb-2 flex justify-end">
-            <a
-              class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-              href="gallery.html"
+          <div class="relative group">
+            <a href="gallery.html" id="dropdownBtn" class="link mx-10"
               >GALLERY</a
             >
-          </li>
-          <li class="mr-3 mb-2 flex justify-end">
-            <a
-              class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-              href="updates.html"
-              >UPDATES</a
+            <!-- Dropdown Start -->
+            <div
+              id="dropdown"
+              class="hidden absolute text-black mt-2 p-2 bg-white"
             >
-          </li>
-          <li class="mr-3 flex justify-end">
-            <a
-              class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-              href="#"
-              >CONTACT</a
-            >
+              <a href="auto-marine.html" class="hover:underline flex mt-2"
+                >Auto/Marine</a
+              >
+              <a
+                href="commercial-healthcare.html"
+                class="hover:underline flex my-3"
+                >Commercial/Healthcare</a
+              >
+              <a href="furniture.html" class="hover:underline">Furniture</a>
+            </div>
+            <!-- Dropdown End -->
+          </div>
+          <li>
+            <a href="updates.html" class="link">UPDATES</a>
           </li>
         </ul>
-      </div>
-    </header>
 
-    <!-- Blog posts -->
-    <div>
-      <h2>Blog Post 1</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        voluptatum, quibusdam, quia, quae voluptate voluptatem quod dolorum
-        voluptatibus quos quas doloremque. Quisquam voluptatum, quibusdam, quia,
-        quae voluptate voluptatem quod dolorum voluptatibus quos quas
-        doloremque.
-      </p>
-      <img src="https://via.placeholder.com/400x300" />
+        <!-- Logo -->
+        <h1
+          class="flex lg:pt-0 sm:pt-3 pt-12 lg:items-center whitespace-nowrap"
+        >
+          <a
+            class="logo absolute left-1/2 transform -translate-x-1/2 font-Orbitron text-2xl"
+            href="index.html"
+          >
+            FOCO Upholstery
+          </a>
+        </h1>
+        <!-- Logo End -->
 
-      <h2>Blog Post 2</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        voluptatum, quibusdam, quia, quae voluptate voluptatem quod dolorum
-        voluptatibus quos quas doloremque. Quisquam voluptatum, quibusdam, quia,
-        quae voluptate voluptatem quod dolorum voluptatibus quos quas
-        doloremque.
-      </p>
-      <img src="https://via.placeholder.com/400x300" />
+        <!-- right side header -->
+        <div class="flex space-x-10 items-center">
+          <a href="testimonials.html" class="link hidden lg:flex"
+            >TESTIMONIALS</a
+          >
+          <a href="contact.html" class="link hidden lg:flex">CONTACT</a>
+          <!-- Instagram Link -->
+          <ul>
+            <li class="item hidden lg:flex">
+              <a
+                href="https://www.instagram.com/focoupholstery/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-instagram icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    class="bi bi-instagram"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                    /></svg
+                ></i>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-      <h2>Blog Post 3</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        voluptatum, quibusdam, quia, quae voluptate voluptatem quod dolorum
-        voluptatibus quos quas doloremque. Quisquam voluptatum, quibusdam, quia,
-        quae voluptate voluptatem quod dolorum voluptatibus quos quas
-        doloremque.
-      </p>
-      <img src="https://via.placeholder.com/400x300" />
+        <!-- Hamburger Menu -->
+        <div class="lg:hidden h-[90px] sm:h-53">
+          <button
+            id="nav-toggle"
+            class="absolute right-0 top-0 flex items-center px-3 border h-53 text-black border-white hover:text-black hover:border-white"
+          >
+            <svg
+              class="fill-current h-6 w-6"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
 
-      <!-- contact, Phone and Email -->
+        <div
+          class="lg:hidden w-full flex-grow hidden pt-24 sm:pt-12 lg:pt-0"
+          id="nav-content"
+        >
+          <ul class="list-reset lg:flex justify-end flex-1 mb-5">
+            <li class="mr-3">
+              <a
+                class="pb-2 pt-5 px-4 mb-2 text-gray-500 no-underline hover:text-gray-200 flex justify-end"
+                href="index.html"
+                >HOME</a
+              >
+            </li>
+            <li class="mr-3 mb-2 flex justify-end">
+              <a
+                class="inline-block text-gray-500 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                href="gallery.html"
+                >GALLERY</a
+              >
+            </li>
+            <li class="mr-3 mb-2 flex justify-end">
+              <a
+                class="inline-block text-black no-underline hover:text-underline py-2 px-4"
+                href="updates.html"
+                >UPDATES</a
+              >
+            </li>
+            <li class="mr-3 mb-2 flex justify-end">
+              <a
+                class="inline-block text-gray-500 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                href="testimonials.html"
+                >TESTIMONIALS</a
+              >
+            </li>
+            <li class="mr-3 flex justify-end">
+              <a
+                class="inline-block text-gray-500 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                href="contact.html"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
+        </div>
+      </header>
 
-      <div>
-        <div>Get In Touch</div>
-        <ul id="contactOptions">
-          <li><a href="phone">970-999-9999</a></li>
-          <li><a href="email">clay@gmail.com</a></li>
-        </ul>
-      </div>
-    </div>
+      <h2 class="flex justify-center my-[33vh]">Coming Soon...</h2>
 
-    <script type="module" src="main.js"></script>
-  </body>
+      <!-- Footer -->
+      <footer
+        class="mt-5 xl:mx-40 mx-10 pt-5 pb-10 xl:px-20 px-1 border-t-2 border-black text-md text-xs"
+      >
+        <div
+          class="footer-container flex items-center justify-between text-xs lg:h-53 top-0 flex-row lg:justify-between"
+        >
+          <div class="contact-info">
+            <p class="p-1 underline text-base">Contact Info</p>
+            <div class="sm:flex">
+              <p class="p-1 font-bold">Phone:</p>
+              <p class="p-1">(970) 219-0571</p>
+            </div>
+            <div class="sm:flex">
+              <p class="p-1 font-bold pt-2.5">Email:</p>
+              <p class="p-1 font-sans text-base">clay@focoupholstery.com</p>
+            </div>
+          </div>
+
+          <div
+            class="quick-links flex flex-col border-l sm:border-none border-black border-0"
+          >
+            <a href="contact.html" class="p-1 hover:underline"
+              >Request a free quote</a
+            >
+            <a
+              href="https://g.page/r/CY174FU9hK2kEB0/review"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="p-1 hover:underline"
+              >Leave a Google Review</a
+            >
+          </div>
+        </div>
+      </footer>
+
+      <!-- Footer End -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script
+        type="text/javascript"
+        src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+      ></script>
+      <script src="slider.js"></script>
+      <script type="module" src="main.js"></script>
+      <script
+        src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+        type="module"
+      ></script>
+    </body>
 </html>

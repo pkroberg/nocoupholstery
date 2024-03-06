@@ -10,8 +10,9 @@
   </head>
 
   <body class="bg-white text-black" onload="getPics()">
+    <!-- Header -->
     <header
-      class="header bg-white sticky lg:h-53 top-0 xl:px-32 px-5 text-xs flex flex-row lg:justify-between justify-end z-10"
+      class="header bg-white sticky lg:h-53 top-0 xl:px-32 px-5 text-xs flex flex-row lg:justify-between justify-end z-20"
     >
       <!-- left side header -->
       <ul id="nav-left" class="hidden lg:flex mt-[20px]">
@@ -56,7 +57,7 @@
 
       <!-- right side header -->
       <div class="flex space-x-10 items-center">
-        <a href="contact.html" class="link hidden lg:flex">TESTIMONIALS</a>
+        <a href="testimonials.html" class="link hidden lg:flex">TESTIMONIALS</a>
         <a href="contact.html" class="link hidden lg:flex">CONTACT</a>
         <!-- Instagram Link -->
         <ul>
@@ -96,9 +97,9 @@
           </svg>
         </button>
       </div>
-      <!-- Hamburger Menu Items -->
+
       <div
-        class="w-full flex-grow hidden pt-24 sm:pt-12 lg:pt-0"
+        class="lg:hidden w-full flex-grow hidden pt-24 sm:pt-12 lg:pt-0"
         id="nav-content"
       >
         <ul class="list-reset lg:flex justify-end flex-1 mb-5">
@@ -121,6 +122,13 @@
               class="inline-block text-gray-500 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
               href="updates.html"
               >UPDATES</a
+            >
+          </li>
+          <li class="mr-3 mb-2 flex justify-end">
+            <a
+              class="inline-block text-gray-500 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+              href="testimonials.html"
+              >TESTIMONIALS</a
             >
           </li>
           <li class="mr-3 flex justify-end">
