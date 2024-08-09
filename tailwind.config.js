@@ -25,6 +25,9 @@ export default {
       53: "53px",
       106: "106px",
     },
+    width: {
+      35: "35rem",
+    },
   },
   plugins: [],
 };
