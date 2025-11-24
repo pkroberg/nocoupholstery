@@ -1,0 +1,252 @@
+@import "tailwindcss";
+
+@theme {
+  --greyscale1: "#F8F9FA";
+  --greyscale2: "#E9ECEF";
+  --greyscale3: "#DEE2E6";
+  --greyscale4: "#CED4DA";
+  --greyscale5: "#ADB5BD";
+  --greyscale6: "#6C757D";
+  --greyscale7: "#495057";
+  --greyscale8: "#343A40";
+  --greyscale9: "#212529";
+
+  --font-Orbitron: "Orbitron, sans-serif";
+  --font-Blair: "Blair, sans-serif";
+
+  --height-53: 53px;
+  --height-106: 106px;
+
+  --width-35: 35px;
+}
+
+@font-face {
+  font-family: "Blair";
+  src: url("../fonts/Blair-ITC-Std-Light.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Orbitron";
+  src: url("../fonts/Orbitron-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Blair", sans-serif;
+  margin-left: 0;
+}
+
+.slideshow {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.slideshow .slider {
+  width: 100vw;
+  height: 100vw;
+  z-index: 2;
+}
+.slideshow .slider * {
+  outline: none;
+}
+.slideshow .slider .item {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
+.slideshow .slider .item .text {
+  display: none;
+}
+
+/* IMAGE POSITIONING */
+.slideshow .slider .item img {
+  min-width: 101%;
+  min-height: 101%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+.slideshow .slick-dots {
+  position: absolute;
+  width: 40px;
+  height: 125px;
+  bottom: auto;
+  /* HEIGHT OF SLICK DOTS */
+  top: 46.5vh;
+  right: 3rem;
+  transform: translateY(-50%);
+  left: auto;
+  color: #fff;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .slideshow .slick-dots {
+    position: absolute;
+    width: 40px;
+    height: 125px;
+    bottom: auto;
+    /* HEIGHT OF SLICK DOTS */
+    top: 23.8rem;
+    right: 0rem;
+    transform: translateY(-50%);
+    left: auto;
+    color: #fff;
+    display: block;
+  }
+}
+
+.slideshow .slick-dots li {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.slideshow .slick-dots li button {
+  position: relative;
+  width: 20px;
+  height: 15px;
+  text-align: center;
+}
+.slideshow .slick-dots li button:before {
+  content: "";
+  background: #fff;
+  color: #fff;
+  height: 2px;
+  width: 20px;
+  border-radius: 0;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: auto;
+  transform: translateY(-50%);
+  transition: all 0.3s ease-in-out;
+  opacity: 0.6;
+}
+.slideshow .slick-dots li.slick-active button:before {
+  width: 40px;
+  opacity: 1;
+}
+
+.slideshow .slick-dots li button:hover:before {
+  cursor: pointer;
+}
+
+.slideshow .slick-dots li.slick-active button:hover:before {
+  cursor: pointer;
+}
+
+.slideshow.slideshow-right {
+  left: 0;
+  width: 49.71vw;
+  pointer-events: none;
+}
+.slideshow.slideshow-right .slider {
+  left: 0;
+  position: absolute;
+}
+
+.slideshow-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  font-size: 80px;
+  width: 100vw;
+  text-align: center;
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 100;
+  pointer-events: none;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  line-height: 0.8;
+}
+@media (max-width: 767px) {
+  .slideshow-text {
+    font-size: 25px;
+  }
+}
+
+.the-most {
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 50vw;
+  max-width: 200px;
+  padding: 10px;
+}
+.the-most img {
+  max-width: 100%;
+}
+
+button {
+  background: transparent;
+  border: none;
+  color: transparent;
+}
+
+.split-slideshow {
+  position: relative;
+  width: 100vw;
+  /* SLIDESHOW HEIGHT */
+  height: 90vh;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .split-slideshow {
+    position: relative;
+    width: 100vw;
+    /* SLIDESHOW HEIGHT */
+    height: 725px;
+    overflow: hidden;
+  }
+}
+
+/* Styling for z-index */
+.common-ancestor {
+  position: relative;
+  z-index: 1;
+}
+
+.common-ancestor .header {
+  z-index: 2;
+}
+
+.common-ancestor .split-slideshow {
+  z-index: 1;
+}
+
+/* Gallery Full Page View */
+#fullpage {
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-color: black;
+  cursor: pointer;
+}

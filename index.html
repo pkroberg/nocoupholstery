@@ -1,0 +1,312 @@
+<!-- 
+ TODO
+add instagram icon to phone header 
+click/tap to reveal email and phone number on footer
+add pointer to hamburger menu
+make contact box wider
+ask clay - add link to Aberg Leather?
+remove clickable sidebar on slider
+change fonts to helvetica
+add no-word logo to body
+remove updates page
+
+update all pages once design is finalized
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="./src/header.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOCO Upholstery</title>
+    <link rel="icon" href="/pics/small_logo.ico" />
+  </head>
+
+  <body class="bg-white text-black">
+    <!-- Common Ancestor for z-axis -->
+    <div class="common-ancestor">
+      <!-- Header -->
+      <header
+        class="header bg-white sticky lg:h-53 top-0 xl:px-32 px-5 text-xs flex flex-row lg:justify-between justify-end z-20 font-[Blair]"
+      >
+        <!-- left side header -->
+        <ul id="nav-left" class="hidden lg:flex mt-5">
+          <li class="">
+            <a href="index.html" class="link">HOME</a>
+          </li>
+
+          <div class="relative group">
+            <a href="gallery.html" id="dropdownBtn" class="link mx-10"
+              >GALLERY</a
+            >
+            <!-- Dropdown Start -->
+            <div
+              id="dropdown"
+              class="hidden absolute text-black mt-2 p-2 bg-white"
+            >
+              <a href="auto-marine.html" class="hover:underline flex mt-2"
+                >Auto/Marine</a
+              >
+              <a
+                href="commercial-healthcare.html"
+                class="hover:underline flex my-3"
+                >Commercial/Healthcare</a
+              >
+              <a href="furniture.html" class="hover:underline">Furniture</a>
+            </div>
+            <!-- Dropdown End -->
+          </div>
+          <li>
+            <a href="updates.html" class="link">UPDATES</a>
+          </li>
+        </ul>
+
+        <!-- Logo -->
+        <h1
+          class="flex lg:pt-0 sm:pt-3 pt-12 lg:items-center whitespace-nowrap"
+        >
+          <a
+            class="logo absolute left-1/2 transform -translate-x-1/2 font-[Orbitron] text-2xl"
+            href="index.html"
+          >
+            FOCO Upholstery
+          </a>
+        </h1>
+        <!-- Logo End -->
+
+        <!-- right side header -->
+        <div class="flex space-x-10 items-center">
+          <a href="testimonials.html" class="link hidden lg:flex"
+            >TESTIMONIALS</a
+          >
+          <a href="contact.html" class="link hidden lg:flex">CONTACT</a>
+          <!-- Instagram Link -->
+          <ul>
+            <li class="item hidden lg:flex">
+              <a
+                href="https://www.instagram.com/focoupholstery/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-instagram icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    class="bi bi-instagram"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                    /></svg
+                ></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hamburger Menu -->
+        <div class="lg:hidden h-[90px] sm:h-53">
+          <button
+            id="nav-toggle"
+            class="absolute right-0 top-0 flex items-center px-3 border h-53 text-black border-white hover:text-black hover:border-white"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="25"
+              height="25"
+              viewBox="0 0 50 50"
+            >
+              <path
+                d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <div
+          class="lg:hidden w-full grow hidden pt-24 sm:pt-12 lg:pt-0"
+          id="nav-content"
+        >
+          <ul class="list-reset lg:flex justify-end flex-1 mb-5">
+            <li class="mr-3">
+              <a
+                class="pb-2 pt-5 px-4 mb-2 text-black no-underline flex justify-end"
+                href="index.html"
+                >HOME</a
+              >
+            </li>
+            <li class="mr-3 mb-2 flex justify-end">
+              <a
+                class="inline-block text-gray-500 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                href="gallery.html"
+                >GALLERY</a
+              >
+            </li>
+            <li class="mr-3 mb-2 flex justify-end">
+              <a
+                class="inline-block text-gray-500 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                href="updates.html"
+                >UPDATES</a
+              >
+            </li>
+            <li class="mr-3 mb-2 flex justify-end">
+              <a
+                class="inline-block text-gray-500 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                href="testimonials.html"
+                >TESTIMONIALS</a
+              >
+            </li>
+            <li class="mr-3 flex justify-end">
+              <a
+                class="inline-block text-gray-500 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                href="contact.html"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <!-- Slider -->
+      <div class="split-slideshow">
+        <div class="slideshow">
+          <div class="slider">
+            <div class="item">
+              <img src="/pics/8-maybach1.jpg" />
+            </div>
+            <div class="item">
+              <img src="/pics/15843648656_73e226010e_o.jpg" />
+            </div>
+            <div class="item">
+              <img src="/pics/kam-idris-_HqHX3LBN18-unsplash.jpg" />
+            </div>
+            <div class="item">
+              <img src="/pics/restaurant.jpg" />
+            </div>
+          </div>
+        </div>
+        <div class="slideshow-text hidden">
+          <div class="item">Auto</div>
+          <div class="item">Marine</div>
+          <div class="item">Furniture</div>
+          <div class="item">Commercial</div>
+        </div>
+      </div>
+
+      <!-- Bio and Company Description -->
+      <div class="pb-5 font-sans text-lg">
+        <div class="w-full xl:hidden flex justify-center p-10">
+          <div
+            class="grid grid-cols-2 w-lg shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]"
+          >
+            <img
+              src="/pics/8CB76F6E-9966-4C42-8277-B74F673AB9AD.jpg"
+              alt="Image 1"
+            />
+            <img
+              src="/pics/51F0201A-D8C6-45AF-8B41-85629EBA9F57.jpg"
+              alt="Image 2"
+            />
+          </div>
+        </div>
+        <div
+          class="flex flex-auto items-center xl:gap-12 2xl:gap-24 xl:px-60 2xl:px-[350px] xl:pb-10 xl:pt-20"
+        >
+          <div
+            class="w-auto hidden xl:flex justify-center shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]"
+          >
+            <div class="grid grid-cols-2 w-lg">
+              <img
+                class=""
+                src="/pics/8CB76F6E-9966-4C42-8277-B74F673AB9AD.jpg"
+                alt="Image 1"
+              />
+              <img
+                src="/pics/51F0201A-D8C6-45AF-8B41-85629EBA9F57.jpg"
+                alt="Image 2"
+              />
+            </div>
+          </div>
+          <div class="xl:px-0 sm:px-20 px-10">
+            <p class="text-justify">
+              At FOCO Upholstery, we specialize in transforming your ideas into
+              reality. Whether it's your car's interior, loved to death piece of
+              furnature, or the precision required for aircraft and boats, we
+              bring your ideas to life with unparalleled skill and dedication.
+              Let us handle the craftsmanship so your vision comes together
+              exactly the way you want.
+            </p>
+          </div>
+        </div>
+        <div class="pt-10 text-center">
+          <p class="pb-2.5 font-semibold">
+            Proudly serving the following cities:
+          </p>
+          <p>Fort Collins</p>
+          <p>Loveland</p>
+          <p>Windsor</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="mt-5 xl:mx-40 mx-10 pt-5 pb-10 xl:px-20 px-1 border-t-2 border-black text-md text-xs"
+    >
+      <div
+        class="footer-container flex items-center justify-between text-xs lg:h-53 top-0 flex-row lg:justify-between"
+      >
+        <div class="contact-info">
+          <p class="p-1 underline text-base">Contact Info</p>
+          <div class="sm:flex">
+            <p class="p-1 font-bold">Phone:</p>
+            <p class="p-1">(970) 219-0571</p>
+          </div>
+          <div class="sm:flex">
+            <p class="p-1 font-bold pt-2.5">Email:</p>
+            <p class="p-1 font-sans text-base">clay@focoupholstery.com</p>
+          </div>
+        </div>
+
+        <div
+          class="quick-links flex flex-col border-l sm:border-none border-black border-0"
+        >
+          <a href="contact.html" class="p-1 hover:underline"
+            >Request a free quote</a
+          >
+          <a
+            href="https://g.page/r/CY174FU9hK2kEB0/review"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="p-1 hover:underline"
+            >Leave a Google Review</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer End -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./src/slider.js"></script>
+    <script type="module" src="./src/main.js"></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+  </body>
+</html>
