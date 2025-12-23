@@ -1,9 +1,7 @@
 <!-- 
  TODO
-click/tap to reveal email and phone number on footer
 make contact box wider
-ask clay - add link to Aberg Leather?, black version of no_words_logo?
-  add no-word logo to body
+remove lowered logo on mobile
 
 update all pages once design is finalized
 -->
@@ -22,6 +20,14 @@ update all pages once design is finalized
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FOCO Upholstery</title>
     <link rel="icon" href="/pics/small_logo.ico" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "telephone": "+19702190571",
+      "email": "clay@focoupholstery.com"
+    }
+    </script>
   </head>
 
   <body class="bg-white text-black">
@@ -82,6 +88,10 @@ update all pages once design is finalized
             </div>
             <!-- Dropdown End -->
           </div>
+          <li class="">
+            <a href="testimonials.html" class="link">TESTIMONIALS</a>
+          </li>
+          
         </ul>
 
         <!-- Logo -->
@@ -99,8 +109,8 @@ update all pages once design is finalized
 
         <!-- right side header -->
         <div class="flex space-x-10 items-center">
-          <a href="testimonials.html" class="link hidden lg:flex"
-            >TESTIMONIALS</a
+          <a href="https://abergleather.com" class="link hidden lg:flex"
+            >ÅBERG LEATHER</a
           >
           <a href="contact.html" class="link hidden lg:flex">CONTACT</a>
           <!-- Instagram Link -->
@@ -173,6 +183,13 @@ update all pages once design is finalized
                 class="inline-block text-gray-500 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
                 href="testimonials.html"
                 >TESTIMONIALS</a
+              >
+            </li>
+            <li class="mr-3 mb-2 flex justify-end">
+              <a
+                class="inline-block text-gray-500 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                href="https://abergleather.com"
+                >ÅBERG LEATHER</a
               >
             </li>
             <li class="mr-3 flex justify-end">
@@ -276,28 +293,29 @@ update all pages once design is finalized
         class="footer-container flex items-center justify-between text-xs lg:h-53 top-0 flex-row lg:justify-between"
       >
         <div class="contact-info">
-          <p class="p-1 underline text-base">Contact Info</p>
           <div class="sm:flex">
-            <p class="p-1 font-bold">Phone:</p>
-            <p class="p-1">(970) 219-0571</p>
-          </div>
-          <div class="sm:flex">
-            <p class="p-1 font-bold pt-2.5">Email:</p>
-            <p class="p-1 font-sans text-base">clay@focoupholstery.com</p>
-          </div>
+          <p class="p-1 font-bold">Phone:</p>
+          <a id="phone-link" class="p-1 hover:underline font-sans"></a>
+        </div>
+
+        <div class="sm:flex">
+          <p class="p-1 font-bold pt-2.5">Email:</p>
+          <a id="email-link" class="p-1 hover:underline font-sans text-xs sm:text-base"></a>
+        </div>
+
         </div>
 
         <div
           class="quick-links flex flex-col border-l sm:border-none border-black border-0"
         >
-          <a href="contact.html" class="p-1 hover:underline"
+          <a href="contact.html" class="p-2 hover:underline"
             >Request a free quote</a
           >
           <a
             href="https://g.page/r/CY174FU9hK2kEB0/review"
             target="_blank"
             rel="noopener noreferrer"
-            class="p-1 hover:underline"
+            class="p-2 hover:underline"
             >Leave a Google Review</a
           >
         </div>
@@ -317,5 +335,6 @@ update all pages once design is finalized
       src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
       type="module"
     ></script>
+
   </body>
 </html>
