@@ -23,7 +23,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header
+      <header
         class="header bg-white sticky lg:h-53 top-0 xl:px-32 px-5 text-xs flex flex-row justify-between z-20 font-[Blair]"
       >
         <!-- left side header -->
@@ -85,7 +85,7 @@
 
         <!-- Logo -->
         <h1
-          class="flex lg:pt-0 sm:pt-3 pt-12 lg:items-center whitespace-nowrap"
+          class="flex lg:pt-0 pt-3 lg:items-center whitespace-nowrap"
         >
           <a
             class="logo absolute left-1/2 transform -translate-x-1/2 font-[Orbitron] text-2xl"
@@ -128,7 +128,7 @@
         </div>
 
         <!-- Hamburger Menu -->
-        <div class="lg:hidden h-[90px] sm:h-53">
+        <div class="lg:hidden h-53">
           <button
             id="nav-toggle"
             class="absolute right-0 top-0 flex items-center px-3 border h-53 text-black border-white hover:text-black hover:border-white hover:cursor-pointer"
@@ -149,13 +149,13 @@
         </div>
 
         <div
-          class="lg:hidden w-full grow hidden pt-24 sm:pt-12 lg:pt-0"
+          class="lg:hidden w-full grow hidden pt-12 lg:pt-0"
           id="nav-content"
         >
           <ul class="list-reset lg:flex justify-end flex-1 mb-5">
-            <li class="mr-3 mb-2 flex justify-end">
+            <li class="mr-3">
               <a
-                class="inline-block text-gray-500 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                class="pb-2 pt-5 px-4 mb-2 text-gray-500 no-underline hover:text-gray-200 flex justify-end"
                 href="index.html"
                 >HOME</a
               >
@@ -176,21 +176,21 @@
             </li>
             <li class="mr-3 mb-2 flex justify-end">
               <a
-                class="pb-2 pt-5 px-4 mb-2 text-black no-underline flex justify-end"
+                class="inline-block text-gray-500 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
                 href="https://abergleather.com"
                 >ÅBERG LEATHER</a
               >
             </li>
             <li class="mr-3 flex justify-end">
               <a
-                class="inline-block text-gray-500 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                class="inline-block text-black no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
                 href="contact.html"
                 >CONTACT</a
               >
             </li>
           </ul>
         </div>
-    </header>
+      </header>
     <!-- Contact Form -->
     <div class="flex flex-col items-center py-5">
       <h2 class="text-2xl font-semibold mb-4 py-5 text-center">
@@ -258,7 +258,8 @@
           <!-- Submit Button -->
           <button
             type="submit"
-            class="bg-gray-400 text-black shadow-[0_3px_10px_rgb(0,0,0,0.2)] px-4 py-2 rounded-md hover:bg-gray-500 flex justify-center w-full"
+            style="background-color: black; color: white;"
+            class="shadow-[0_3px_10px_rgb(0,0,0,0.2)] px-4 py-2 rounded-md hover:bg-gray-500 hover:cursor-pointer flex justify-center w-full"
           >
             Submit
           </button>
