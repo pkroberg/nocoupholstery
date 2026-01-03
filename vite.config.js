@@ -9,7 +9,7 @@ export default defineConfig({
       input: {
         main: "index.html",
         gallery: "gallery.html",
-        auto_marine: "auto_marine.html",
+        auto_marine: "auto-marine.html",
         commercial_healthcare: "commercial_healthcare.html",
         furniture: "furniture.html",
         testimonials: "testimonials.html",
