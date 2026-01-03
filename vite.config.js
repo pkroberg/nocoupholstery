@@ -9,8 +9,8 @@ export default defineConfig({
       input: {
         main: "index.html",
         gallery: "gallery.html",
-        auto_marine: "auto-marine.html",
-        commercial_healthcare: "commercial_healthcare.html",
+        "auto-marine": "auto-marine.html",
+        "commercial-healthcare": "commercial-healthcare.html",
         furniture: "furniture.html",
         testimonials: "testimonials.html",
         contact: "contact.html"
