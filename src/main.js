@@ -1,6 +1,9 @@
 import "./style.css";
-import { initSlider } from "./slider.js";
-initSlider();
+if (document.querySelector('.slideshow')) {
+  import('./slider.js').then(({ initSlider }) => {
+    initSlider();
+  });
+}
 
 // Gallery dropdown menu
 document.addEventListener("DOMContentLoaded", function () {
