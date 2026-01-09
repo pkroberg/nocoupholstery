@@ -1,4 +1,6 @@
 import "./style.css";
+import { initSlider } from "./slider.js";
+initSlider();
 
 // Gallery dropdown menu
 document.addEventListener("DOMContentLoaded", function () {
