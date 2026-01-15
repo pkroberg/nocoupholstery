@@ -68,7 +68,7 @@ if (fullPage) {
 
 document.addEventListener("DOMContentLoaded", () => {
   // Phone
-  const phoneParts = ['970', '219', '0571'];
+  const phoneParts = ['970', '372', '0273'];
   const phoneLink = document.getElementById('phone-link');
 
   if (phoneLink) {
