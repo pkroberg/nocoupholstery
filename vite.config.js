@@ -13,7 +13,8 @@ export default defineConfig({
         "commercial-healthcare": "commercial-healthcare.html",
         furniture: "furniture.html",
         testimonials: "testimonials.html",
-        contact: "contact.html"
+        contact: "contact.html",
+        "about-me": "about-me.html",
       }
     }
   }
